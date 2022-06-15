@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JavaScript</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FONTS AND ICONS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="http://fonts.cdnfonts.com/css/digital-7-mono" rel="stylesheet">
+</head>
+<body>
+    <div class="calculator-body">
+        <div class="calculator-viewfinder"></div>
+        <ul class="list-buttons">
+            <li class="standard-line">
+                <button>ON/AC</button>
+                <button><span class="material-symbols-outlined">backspace</span></button>
+                <button class="operators">÷</button>
+                <button class="operators">*</button>
+            </li>
+            <li class="standard-line">
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button class="operators">-</button>
+            </li>
+            <li class="standard-line">
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button class="operators">+</button>
+            </li>
+            <li class="unusual-line">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+            </li>
+            <li class="unusual-line">
+                <button id="double-column">0</button>
+                <button class="operators">.</button>
+                <button id="double-row" class="operators">=</button>
+            </div>
+        </ul>
+    </div>
+</body>
+</html>
