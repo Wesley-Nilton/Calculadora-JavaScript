@@ -81,6 +81,11 @@ body{
     background-color: var(--bg-buttons);
 }
 
+.list-buttons button.active{
+    transform: translateY(.3rem);
+    box-shadow: .1rem .1rem .2rem #00000073;
+}
+
 .list-buttons .operators{
     font-family: var(--operators-font);
     font-size: 2.5rem;
