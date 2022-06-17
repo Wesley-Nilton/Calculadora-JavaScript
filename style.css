@@ -6,7 +6,7 @@
 }
 
 :root{
-    --bg-general: #000;
+    --bg-general: #EDEDED;
     --bg-calculator: #ffe260;
     --bg-viewfinder: #727e78;
     --bg-buttons: #f7f4f1;
@@ -26,6 +26,9 @@ body{
     height: 100vh;
     width: 100%;
     background-color: var(--bg-general);
+    background-image: url('assets/img/desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .calculator-body{
