@@ -86,14 +86,8 @@ function activateAnimation(index){
 // CALCULATES FINAL RESULT AND IDENTIFIES ERRORS
 function calculateResult(){
     const expression = response.innerText.replace(/÷/g, "/");
-    const errorResult = {
-        response: function(){response.innerText = "UNDEFINED"},
-        timer: function(){setTimeout(() => {response.innerText = "0";}, 1000)},
-    }
 
     if(response.innerText == ""){
-        errorResult.response();
-        errorResult.timer();
         return;
     }
 
@@ -110,7 +104,9 @@ function calculateResult(){
 
         response.innerText = finalResult;
     } catch{
-        errorResult.response();
-        errorResult.timer();
+        response.innerText = "UNDEFINED";
+        setTimeout(() => {
+            response.innerText = "0";
+        }, 1000);
     }
 }
